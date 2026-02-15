@@ -1,0 +1,28 @@
+{
+  "id": "synochat",
+  "channels": [
+    "synochat"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "nasUrl": {
+        "type": "string",
+        "description": "Synology NAS base URL (e.g., https://10.147.17.10:18493)"
+      },
+      "botToken": {
+        "type": "string",
+        "description": "Synology Chat Bot token (from Incoming webhook)"
+      },
+      "outgoingToken": {
+        "type": "string",
+        "description": "Token for verifying outgoing webhook requests"
+      },
+      "webhookPath": {
+        "type": "string",
+        "description": "Webhook path",
+        "default": "/synochat/callback"
+      }
+    }
+  }
+}

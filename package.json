@@ -1,0 +1,30 @@
+{
+  "name": "openclaw-synochat",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Synology Chat channel plugin for OpenClaw",
+  "license": "MIT",
+  "exports": "./index.js",
+  "clawdbot": {
+    "extensions": [
+      "./index.js"
+    ],
+    "channel": {
+      "id": "synochat",
+      "label": "Synology Chat",
+      "selectionLabel": "Synology Chat (\u7fa4\u6656\u804a\u5929)",
+      "docsPath": "/channels/synochat",
+      "docsLabel": "synochat",
+      "blurb": "Synology Chat bot via outgoing/incoming webhooks.",
+      "order": 90,
+      "aliases": [
+        "synology",
+        "syno"
+      ]
+    }
+  },
+  "dependencies": {
+    "clawdbot": "*"
+  }
+}
